@@ -11,10 +11,31 @@
  ```
 
  3. Tener nest cli instalado
+ ```
+npm i -g @nestjs/cli
+
+ ```
  4. Levantar la base de datos
 
  ``` 
 docker compose up -d
+
+ ```
+
+ 5. Clonar el archivo __.envtemplate__ y renombrar la copia a .env
+
+ 6. Rellenar las variables de entorno contenidas en el .env
+
+ 7. Ejecutar la aplicacion en dev: 
+ ```
+ yarn start:dev 
+ 
+ ```
+
+ 7. Reconstruir la base de datos con la semilla
+ ```
+ localhost:3000/api/v2/seed
+ 
  ```
 
 ## Stack usado
